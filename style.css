@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background-color: #03071e;
+}
+
+.header {
+     display: flex; 
+     flex-direction: row;
+}
+
+.header span {
+    color: #ef233c;
+    /* color: #ffb703; */
+}
+
+.header h1 {
+    width: 200px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.header nav {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.header nav a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.header input {
+    margin-top: 25px;
+    width: 350px;
+    height: 50px;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 40px;
+    border-style: none;
+    margin-left: 30px;
+    padding-left: 20px;
+    opacity: 0.6;
+}
+
+.header button {
+    margin-left: 250px;
+    margin-top: 25px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 40px;
+    background-color: #ef233c;
+    color: white;
+    font-weight: 200;
+}
+
+.header .join {
+    margin-left: 10px;
+}
+
+nav a:hover {
+    color: #16697a;
+}
+
+button:hover {
+    background-color: #e63946;
+}
+
+/* .header h1:hover {
+    background-color: #0a9396;
+} */
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.content img {
+    margin-top: 90px;
+    margin-left: 20px;
+    height: 300px;
+    width: 400px;
+    border-radius: 30px;
+    transition: transform .3s;
+}
+
+.content h1 {
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.content button {
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 60px;
+    width: 150px;
+    border-radius: 40px;
+    border: 5px solid #00b4d8;
+    background: none;
+    color: #00b4d8;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.content .list {
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 60px;
+    width: 150px;
+    border-radius: 40px;
+    border: 5px solid #dad7cd;
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+
+.content button:hover {
+    background-color: #a2d2ff;
+    color: #001219;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+.content .movie2 {
+    margin-top: 5px;
+    margin-left: 40px;
+    color: black;
+    width: 450px;
+}
+
+.movie2 h1 {
+    font-size: 25px;
+}
+
+.content .movie3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: black;
+    width: 500px;
+}
+
+.movie3 h1 {
+    font-size: 25px;
+}
+.movie4 img {
+     margin-top: 96px;
+     height: 300px;
+     width: 400px;
+}
+
+.movie4 h1 {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.footer {
+    border: 3px solid black;
+    height: 150px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
+
+.footer span {
+    color: #ef233c;
+}
+
+.message {
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.message .watching {
+    height: 80px;
+    width: 270px;
+    background-color: #dc2f02;
+    border-radius: 35px;
+    font-size: 26px;
+    color: white;
+}
+
+.message .watching:hover {
+    background-color: #da2c38;
+}
+
+@media(max-width: 768px) {
+     
+    .header {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    .header h1 {
+        font-size: 60px;
+        margin: 20px 0;
+
+      }
+      
+    .header nav {
+        margin: 20px 0;
+      }
+      
+    .header input {
+        width: 400px;
+        margin: 20px 0;
+      }
+      
+    .header button {
+        margin: 20px 0;
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        display: none;
+      }
+
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .movie3 {
+        margin-left: 75px;
+    }
+
+    .content .movie4 {
+        margin-left: 0px;
+        
+    }
+
+    .message {
+        font-size: 25px;
+    }
+    
+    .message .watching {
+        height: 60px;
+    }
+}
